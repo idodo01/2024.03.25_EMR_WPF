@@ -1,0 +1,172 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\services\\pageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:services\\pageservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\viewmodels\\pages\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:viewmodels\\pages\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\models\\emrdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:models\\emrdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\models\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:models\\appconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\interfaces\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:interfaces\\idatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 4228,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Services\\PatientService.cs",
+              "RelativeToolTip": "Services\\PatientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:55:25.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppConfig.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Models\\AppConfig.cs",
+              "RelativeDocumentMoniker": "Models\\AppConfig.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Models\\AppConfig.cs",
+              "RelativeToolTip": "Models\\AppConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:54:26.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\App.xaml.cs",
+              "RelativeDocumentMoniker": "App.xaml.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\App.xaml.cs",
+              "RelativeToolTip": "App.xaml.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAASwA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:53:46.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PageService.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Services\\PageService.cs",
+              "RelativeDocumentMoniker": "Services\\PageService.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Services\\PageService.cs",
+              "RelativeToolTip": "Services\\PageService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:50:26.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:52:23.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\interfaces\\IDatabase.cs",
+              "RelativeDocumentMoniker": "interfaces\\IDatabase.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\interfaces\\IDatabase.cs",
+              "RelativeToolTip": "interfaces\\IDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:52:14.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataPage.xaml",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\DataPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Pages\\DataPage.xaml",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\DataPage.xaml",
+              "RelativeToolTip": "Views\\Pages\\DataPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-25T13:50:35.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\ViewModels\\Pages\\DataViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Pages\\DataViewModel.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\ViewModels\\Pages\\DataViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Pages\\DataViewModel.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAUwB8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:50:28.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmrdbContext.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Models\\EmrdbContext.cs",
+              "RelativeDocumentMoniker": "Models\\EmrdbContext.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Models\\EmrdbContext.cs",
+              "RelativeToolTip": "Models\\EmrdbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T13:50:03.494Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
