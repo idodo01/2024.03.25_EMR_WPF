@@ -14,5 +14,10 @@ namespace EMR.Views.Pages
 
             InitializeComponent();
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

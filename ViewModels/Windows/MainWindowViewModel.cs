@@ -13,15 +13,25 @@ namespace EMR.ViewModels.Windows
         {
             new NavigationViewItem()
             {
-                Content = "Home",
+                Content = "진료",
                 Icon = new SymbolIcon { Symbol = SymbolRegular.Home24 },
                 TargetPageType = typeof(Views.Pages.DashboardPage)
             },
             new NavigationViewItem()
             {
-                Content = "Data",
+                Content = "간호",
                 Icon = new SymbolIcon { Symbol = SymbolRegular.DataHistogram24 },
                 TargetPageType = typeof(Views.Pages.DataPage)
+            },  new NavigationViewItem()
+            {
+                Content = "원무",
+                Icon = new SymbolIcon { Symbol = SymbolRegular.Add12 },
+                TargetPageType = typeof(Views.Pages.AdministrationPage)
+            }, new NavigationViewItem()
+            {
+                Content = "인사",
+                Icon = new SymbolIcon { Symbol = SymbolRegular.Add12 },
+                TargetPageType = typeof(Views.Pages.StaffPage)
             }
         };
 

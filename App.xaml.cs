@@ -12,7 +12,6 @@ using EMR.Views.Windows;
 using Wpf.Ui;
 using EMR.interfaces;
 using EMR.Models;
-using EMR.Services;
 
 namespace EMR
 {
@@ -56,6 +55,12 @@ namespace EMR
                 services.AddSingleton<DashboardViewModel>();
                 services.AddSingleton<DataPage>();
                 services.AddSingleton<DataViewModel>();
+                services.AddSingleton<AdministrationPage>();
+                services.AddSingleton<AdministrationViewModel>();
+                services.AddSingleton<StaffPage>();
+                services.AddSingleton<StaffViewModel>();
+
+
                 services.AddSingleton<SettingsPage>();
                 services.AddSingleton<SettingsViewModel>();
             }).Build();

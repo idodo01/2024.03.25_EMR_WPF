@@ -11,6 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Views\Pages\StaffPage - 복사.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="wpfui-icon.ico" />
   </ItemGroup>
 
@@ -34,6 +38,10 @@
   <ItemGroup>
     <None Remove="Assets\wpfui-icon-256.png" />
     <None Remove="Assets\wpfui-icon-1024.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Views\Pages\StaffPage - 복사.xaml" />
   </ItemGroup>
 
   <ItemGroup>
