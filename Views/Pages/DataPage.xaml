@@ -70,7 +70,7 @@
 
 
         <Grid  Name="dgGrid" Grid.Column= "1">
-            <DataGrid x:Name="dgGangnamguPopulation" ItemsSource="{Binding ViewModel.Patients, Mode=OneWay}"/>
+            <DataGrid x:Name="dgPatients" ItemsSource="{Binding ViewModel.Patients, Mode=OneWay}"/>
         </Grid>
     </Grid>
 </Page>

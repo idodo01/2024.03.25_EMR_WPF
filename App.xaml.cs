@@ -49,6 +49,7 @@ namespace EMR
                 services.AddSingleton<MainWindowViewModel>();
 
                 services.AddSingleton<IDatabase<Patient>, PatientService>();
+                services.AddSingleton<IDatabase<Staff>, StaffService>();
                 services.AddSingleton<EmrdbContext>();
 
                 services.AddSingleton<DashboardPage>();

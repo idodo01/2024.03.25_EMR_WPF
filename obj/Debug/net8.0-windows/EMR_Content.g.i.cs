@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/bird.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("resources/cat.jpg")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("wpfui-icon.ico")]
 
 

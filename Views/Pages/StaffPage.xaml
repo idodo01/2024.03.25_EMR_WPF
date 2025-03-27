@@ -19,21 +19,32 @@
     mc:Ignorable="d">
 
     <Grid>
-        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="290,55,156,53" x:Name="listView1">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="Img">
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <Image Width="60" Height="60" Source="{Binding UserImg}"/>
-                            </DataTemplate>
-                        </GridViewColumn.CellTemplate>
-                    </GridViewColumn>
-                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
-                    <GridViewColumn Header="Age" DisplayMemberBinding="{Binding UserAge}"/>
-                </GridView>
-            </ListView.View>
-        </ListView>
-        <Button x:Name="btnTest1" Content="Button" HorizontalAlignment="Right" Margin="0,70,68,0" VerticalAlignment="Top" Click="btnTest1_Click" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid  Name="dgGrid" Grid.Column= "0">
+            <DataGrid x:Name="dgStaff" ItemsSource="{Binding ViewModel.Staffs, Mode=OneWay}"/>
+        </Grid>
+
+        <Grid x:Name="searchGrid" Grid.Column= "1">
+            <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="57,75,57,75" x:Name="listView1">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Img">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Image Width="60" Height="60" Source="{Binding UserImg}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Name" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Header="Age" DisplayMemberBinding="{Binding UserAge}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <Button x:Name="btnTest1" Content="Button" HorizontalAlignment="Right" Margin="0,24,50,0" VerticalAlignment="Top" Click="btnTest1_Click" />
+        </Grid>
     </Grid>
 </Page>

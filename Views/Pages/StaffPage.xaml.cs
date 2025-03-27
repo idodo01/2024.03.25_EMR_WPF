@@ -26,16 +26,18 @@ namespace EMR.Views.Pages
 
             User userA = new User();
 
-            userA.UserImg = @"C:\\Users\\idodo\\Documents\\Study2_C\\개발자 Park\\WpfApp\\WpfApp1\\WpfApp1\\Resources\\cat.jpg";
+            //userA.UserImg = @"C:\\Users\\idodo\\Documents\\Study2_C\\개발자 Park\\WpfApp\\WpfApp1\\WpfApp1\\Resources\\cat.jpg";
+            userA.UserImg = "pack://application:,,,/Resources/cat.jpg";
+            //userA.UserImg = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Resources", "cat.jpg"); 
             userA.Name = "hada";
             userA.UserAge = 15;
 
             User userB = new User();
 
-            userB.UserImg = @"C:\\Users\\idodo\\Documents\\Study2_C\\개발자 Park\\WpfApp\\WpfApp1\\WpfApp1\\Resources\\bird.jpg";
+           
+            userB.UserImg = "pack://application:,,,/Resources/bird.jpg"; 
             userB.Name = "daha";
             userB.UserAge = 26;
-
 
 
             myList1.Add(userA);

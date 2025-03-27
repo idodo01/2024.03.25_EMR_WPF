@@ -15,6 +15,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Resources\bird.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\cat.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="wpfui-icon.ico" />
   </ItemGroup>
 
@@ -38,6 +44,8 @@
   <ItemGroup>
     <None Remove="Assets\wpfui-icon-256.png" />
     <None Remove="Assets\wpfui-icon-1024.png" />
+    <None Remove="Resources\bird.jpg" />
+    <None Remove="Resources\cat.jpg" />
   </ItemGroup>
 
   <ItemGroup>
