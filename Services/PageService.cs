@@ -7,14 +7,9 @@ namespace EMR.Services
     /// </summary>
     public class PageService : IPageService
     {
-        /// <summary>
-        /// Service which provides the instances of pages.
-        /// </summary>
+       
         private readonly IServiceProvider _serviceProvider;
 
-        /// <summary>
-        /// Creates new instance and attaches the <see cref="IServiceProvider"/>.
-        /// </summary>
         public PageService(IServiceProvider serviceProvider)
         {
             _serviceProvider = serviceProvider;

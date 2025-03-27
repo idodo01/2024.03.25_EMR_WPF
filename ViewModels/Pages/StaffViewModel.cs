@@ -1,8 +1,11 @@
-﻿using System.Windows.Media;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using EMR.Models;
 using EMR.interfaces;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using Wpf.Ui.Controls;
-
 
 namespace EMR.ViewModels.Pages
 {
@@ -11,33 +14,23 @@ namespace EMR.ViewModels.Pages
         #region FIELDS
 
         private bool isInitialized = false;
-
-        private readonly IDatabase<Staff?>? database;
+        private readonly IDatabase<Staff> database;
 
         #endregion
 
         #region PROPERTIES
 
         [ObservableProperty]
-        private IEnumerable<Staff?>? staffs;
+        private IEnumerable<Staff> staffs;
 
         [ObservableProperty]
-        private IEnumerable<string?>? name;
-
-        [ObservableProperty]
-        private int? selectedAge; 
-        
-        [ObservableProperty]
-        private string? selectedName;
-
-        [ObservableProperty]
-        private int? selectedId;
+        private Staff selectedStaff;
 
         #endregion
 
         #region CONSTRUCTOR
 
-        public StaffViewModel(IDatabase<Staff?>? database)
+        public StaffViewModel(IDatabase<Staff> database)
         {
             this.database = database;
         }
@@ -47,60 +40,86 @@ namespace EMR.ViewModels.Pages
         #region COMMANDS
 
         [RelayCommand]
-        private void OnSelectName()
+        private void OnSelectName(Staff selectedStaff)
         {
-            var selectedData = this.selectedName;
+            this.SelectedStaff = selectedStaff;
         }
 
         [RelayCommand]
         private void UpdateData()
         {
-            var data = this.database?.GetDetail(this.SelectedId);
+            if (this.SelectedStaff != null)
+            {
+                var data = this.database.GetDetail(this.SelectedStaff.Id);
 
-            data.Name = this.SelectedName;
-            data.Age = (int)this.SelectedAge;
+                data.Name = this.SelectedStaff.Name;
+                data.Age = this.SelectedStaff.Age;
+                data.Department = this.SelectedStaff.Department;  // 추가된 속성
+                data.Position = this.SelectedStaff.Position;      // 추가된 속성
+                data.Email = this.SelectedStaff.Email;            // 추가된 속성
+                data.Phone = this.SelectedStaff.Phone;            // 추가된 속성
+                //data.UserImg = this.SelectedStaff.UserImg;        // 추가된 속성
 
-            this.database?.Update(data);
+                this.database.Update(data);
+            }
         }
 
         [RelayCommand]
         private void DeleteData()
         {
-            this.database?.Delete(this.SelectedId);
+            if (this.SelectedStaff != null)
+            {
+                this.database.Delete(this.SelectedStaff.Id);
+            }
         }
 
         [RelayCommand]
         private void ReadDetailData()
         {
-            var data = this.database?.GetDetail(this.SelectedId);
+            if (this.SelectedStaff != null)
+            {
+                var data = this.database.GetDetail(this.SelectedStaff.Id);
 
-            this.SelectedName = data.Name;
-            this.SelectedAge = data.Age;
+                this.SelectedStaff.Name = data.Name;
+                this.SelectedStaff.Age = data.Age;
+                this.SelectedStaff.Department = data.Department;  // 추가된 속성
+                this.SelectedStaff.Position = data.Position;      // 추가된 속성
+                this.SelectedStaff.Email = data.Email;            // 추가된 속성
+                this.SelectedStaff.Phone = data.Phone;            // 추가된 속성
+                //this.SelectedStaff.UserImg = data.UserImg;        // 추가된 속성
+            }
         }
 
         [RelayCommand]
         private void CreateNewData()
         {
-            Staff staff = new Staff();
+            if (this.SelectedStaff != null)
+            {
+                Staff staff = new Staff
+                {
+                    Name = this.SelectedStaff.Name,
+                    Age = this.SelectedStaff.Age,
+                    Department = this.SelectedStaff.Department,  // 추가된 속성
+                    Position = this.SelectedStaff.Position,      // 추가된 속성
+                    Email = this.SelectedStaff.Email,            // 추가된 속성
+                    Phone = this.SelectedStaff.Phone,            // 추가된 속성
+                    //UserImg = this.SelectedStaff.UserImg         // 추가된 속성
+                };
 
-            staff.Id = (int)this.SelectedId;
-
-            staff.Name = this.SelectedName;
-
-            staff.Age = (int)this.SelectedAge;
-
-            this.database?.Create(staff);
+                this.database.Create(staff);
+            }
         }
 
         [RelayCommand]
         private void ReadAllData()
         {
-            this.Staffs = this.database?.Get();
+            this.Staffs = this.database.Get();
         }
 
         #endregion
 
-        #region METHOS
+        #region METHODS
+
         public void OnNavigatedTo()
         {
             if (!isInitialized)
@@ -109,28 +128,14 @@ namespace EMR.ViewModels.Pages
 
         public void OnNavigatedFrom() { }
 
-
-        [RelayCommand]
-        private void OnSelectedName()
-        {
-            var selectedData = this.SelectedName;
-        }
-
-
         private async Task InitializeViewModelAsync()
         {
+            this.Staffs = await Task.Run(() => this.database.Get());
 
-            // 비동기로 데이터를 가져오기
-            this.Staffs = await Task.Run(() => this.database?.Get());
-
-            // 가져온 데이터를 가지고 필요한 작업 수행
-            if (this.staffs != null)
-            {
-                this.Name = this.Staffs?.Select(c => c.Name).ToList();
-            }
-
+    
             isInitialized = true;
         }
+
         #endregion
     }
 }

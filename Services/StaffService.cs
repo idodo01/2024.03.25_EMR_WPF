@@ -25,12 +25,12 @@ namespace EMR.Services
 
         public void Delete(int? id)
         {
-            var validData = this._emrdbContext?.Staffs.FirstOrDefault(c => c.Id == id);
+            var validData = this._emrdbContext?.Patients.FirstOrDefault(c => c.Id == id);
 
             if (validData != null)
             {
-                this._emrdbContext ?.Staffs.Remove(validData);
-                this._emrdbContext ?.SaveChanges();
+                this._emrdbContext?.Patients.Remove(validData);
+                this._emrdbContext?.SaveChanges();
             }
             else
             {
@@ -45,7 +45,7 @@ namespace EMR.Services
 
         public Staff? GetDetail(int? id)
         {
-            var vaildData = this._emrdbContext ?.Staffs.FirstOrDefault(c => c.Id == id);
+            var vaildData = this._emrdbContext?.Staffs.FirstOrDefault(c => c.Id == id);
 
             if (vaildData != null)
             {
@@ -59,8 +59,8 @@ namespace EMR.Services
 
         public void Update(Staff entity)
         {
-            this._emrdbContext ?.Staffs.Update(entity);
-            this._emrdbContext ?.SaveChanges();
+            this._emrdbContext?.Staffs.Update(entity);
+            this._emrdbContext?.SaveChanges();
         }
     }
 }

@@ -47,12 +47,24 @@ public partial class EmrdbContext : DbContext
                 .HasDefaultValueSql("nextval('staff_id_seq'::regclass)")
                 .HasColumnName("id");
             entity.Property(e => e.Age).HasColumnName("age");
-            entity.Property(e => e.Img)
+            entity.Property(e => e.Department)
+                .HasMaxLength(100)
+                .HasColumnName("department");
+            entity.Property(e => e.Email)
                 .HasMaxLength(255)
-                .HasColumnName("img");
+                .HasColumnName("email");
             entity.Property(e => e.Name)
                 .HasMaxLength(100)
                 .HasColumnName("name");
+            entity.Property(e => e.Phone)
+                .HasMaxLength(20)
+                .HasColumnName("phone");
+            entity.Property(e => e.Position)
+                .HasMaxLength(100)
+                .HasColumnName("position");
+            entity.Property(e => e.Userimg)
+                .HasMaxLength(255)
+                .HasColumnName("userimg");
         });
 
         OnModelCreatingPartial(modelBuilder);
