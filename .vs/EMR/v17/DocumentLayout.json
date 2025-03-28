@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:views\\pages\\staffpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\viewmodels\\pages\\staffviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:viewmodels\\pages\\staffviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\viewmodels\\pages\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:viewmodels\\pages\\dataviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|c:\\users\\idodo\\documents\\study2_c\\emr\\views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E82BE265-5ACB-4FD4-8A32-0A08898FEA07}|EMR.csproj|solutionrelative:views\\pages\\datapage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
@@ -18,30 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 4228,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataPage.xaml",
-              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\DataPage.xaml",
-              "RelativeDocumentMoniker": "Views\\Pages\\DataPage.xaml",
-              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\DataPage.xaml",
-              "RelativeToolTip": "Views\\Pages\\DataPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-27T14:32:09.56Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "StaffPage.xaml",
               "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\StaffPage.xaml",
               "RelativeDocumentMoniker": "Views\\Pages\\StaffPage.xaml",
-              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\StaffPage.xaml",
-              "RelativeToolTip": "Views\\Pages\\StaffPage.xaml",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\StaffPage.xaml*",
+              "RelativeToolTip": "Views\\Pages\\StaffPage.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-27T14:32:06.055Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StaffViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\ViewModels\\Pages\\StaffViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Pages\\StaffViewModel.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\ViewModels\\Pages\\StaffViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Pages\\StaffViewModel.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAqwHkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T01:09:44.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\ViewModels\\Pages\\DataViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\Pages\\DataViewModel.cs",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\ViewModels\\Pages\\DataViewModel.cs",
+              "RelativeToolTip": "ViewModels\\Pages\\DataViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T11:06:22.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataPage.xaml",
+              "DocumentMoniker": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\DataPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Pages\\DataPage.xaml",
+              "ToolTip": "C:\\Users\\idodo\\Documents\\Study2_C\\EMR\\Views\\Pages\\DataPage.xaml",
+              "RelativeToolTip": "Views\\Pages\\DataPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-28T11:18:04.45Z",
               "EditorCaption": ""
             }
           ]

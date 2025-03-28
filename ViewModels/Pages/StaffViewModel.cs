@@ -33,90 +33,70 @@ namespace EMR.ViewModels.Pages
         public StaffViewModel(IDatabase<Staff> database)
         {
             this.database = database;
+            SelectStaffCommand = new RelayCommand<Staff>(OnSelectStaff);
         }
 
         #endregion
 
         #region COMMANDS
 
-        [RelayCommand]
-        private void OnSelectName(Staff selectedStaff)
-        {
-            this.SelectedStaff = selectedStaff;
-        }
+        /// <summary>
+        /// "Select" 버튼 클릭 시 실행되는 명령어
+        /// </summary>
+        public IRelayCommand<Staff> SelectStaffCommand { get; }
 
-        [RelayCommand]
-        private void UpdateData()
+        private void OnSelectStaff(Staff staff)
         {
-            if (this.SelectedStaff != null)
+            if (staff != null)
             {
-                var data = this.database.GetDetail(this.SelectedStaff.Id);
-
-                data.Name = this.SelectedStaff.Name;
-                data.Age = this.SelectedStaff.Age;
-                data.Department = this.SelectedStaff.Department;  // 추가된 속성
-                data.Position = this.SelectedStaff.Position;      // 추가된 속성
-                data.Email = this.SelectedStaff.Email;            // 추가된 속성
-                data.Phone = this.SelectedStaff.Phone;            // 추가된 속성
-                //data.UserImg = this.SelectedStaff.UserImg;        // 추가된 속성
-
-                this.database.Update(data);
+                SelectedStaff = staff;
             }
         }
 
-        [RelayCommand]
-        private void DeleteData()
-        {
-            if (this.SelectedStaff != null)
-            {
-                this.database.Delete(this.SelectedStaff.Id);
-            }
-        }
+        //[RelayCommand]
+        //private void UpdateData()
+        //{
+        //    var data = this.database?.GetDetail(this.SelectedId);
 
-        [RelayCommand]
-        private void ReadDetailData()
-        {
-            if (this.SelectedStaff != null)
-            {
-                var data = this.database.GetDetail(this.SelectedStaff.Id);
+        //    data.Name = this.SelectedName;
 
-                this.SelectedStaff.Name = data.Name;
-                this.SelectedStaff.Age = data.Age;
-                this.SelectedStaff.Department = data.Department;  // 추가된 속성
-                this.SelectedStaff.Position = data.Position;      // 추가된 속성
-                this.SelectedStaff.Email = data.Email;            // 추가된 속성
-                this.SelectedStaff.Phone = data.Phone;            // 추가된 속성
-                //this.SelectedStaff.UserImg = data.UserImg;        // 추가된 속성
-            }
-        }
+        //    this.database?.Update(data);
+        //}
 
-        [RelayCommand]
-        private void CreateNewData()
-        {
-            if (this.SelectedStaff != null)
-            {
-                Staff staff = new Staff
-                {
-                    Name = this.SelectedStaff.Name,
-                    Age = this.SelectedStaff.Age,
-                    Department = this.SelectedStaff.Department,  // 추가된 속성
-                    Position = this.SelectedStaff.Position,      // 추가된 속성
-                    Email = this.SelectedStaff.Email,            // 추가된 속성
-                    Phone = this.SelectedStaff.Phone,            // 추가된 속성
-                    //UserImg = this.SelectedStaff.UserImg         // 추가된 속성
-                };
+        //[RelayCommand]
+        //private void DeleteData()
+        //{
+        //    this.database?.Delete(this.SelectedId);
+        //}
 
-                this.database.Create(staff);
-            }
-        }
+        //[RelayCommand]
+        //private void ReadDetailData()
+        //{
+        //    var data = this.database?.GetDetail(this.SelectedId);
 
-        [RelayCommand]
-        private void ReadAllData()
-        {
-            this.Staffs = this.database.Get();
-        }
+        //    this.SelectedName = data.Name;
+        //}
+
+        //[RelayCommand]
+        //private void CreateNewData()
+        //{
+        //    Patient patient = new Patient();
+
+        //    patient.Id = (int)this.SelectedId;
+
+        //    patient.Name = this.SelectedName;
+
+        //    this.database?.Create(patient);
+        //}
+
+        //[RelayCommand]
+        //private void ReadAllData()
+        //{
+        //    this.Patients = this.database?.Get();
+        //}
 
         #endregion
+
 
         #region METHODS
 
@@ -126,13 +106,13 @@ namespace EMR.ViewModels.Pages
                 InitializeViewModelAsync();
         }
 
-        public void OnNavigatedFrom() { }
+        public void OnNavigatedFrom()
+        {
+        }
 
         private async Task InitializeViewModelAsync()
         {
-            this.Staffs = await Task.Run(() => this.database.Get());
-
-    
+            Staffs = await Task.Run(() => database.Get());
             isInitialized = true;
         }
 

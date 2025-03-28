@@ -20,40 +20,42 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="500" />
+            <ColumnDefinition Width="300" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
 
-        
-        <Grid Name="dgGrid" Grid.Column="0" Margin="10">
-        <DataGrid x:Name="dgStaff"
-                      ItemsSource="{Binding ViewModel.Staffs}"
-                      AutoGenerateColumns="False">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="150"/>
-                <DataGridTextColumn Header="Department" Binding="{Binding Department}" Width="100"/>
-                <DataGridTextColumn Header="Position" Binding="{Binding Position}" Width="150"/>
-                <DataGridTextColumn Header="Age" Binding="{Binding Age}" Width="100"/>
-            </DataGrid.Columns>
-        </DataGrid>
+        <Grid Grid.Column="0" Margin="10">
+            <ListBox ItemsSource="{Binding ViewModel.Staffs}"
+                 SelectedItem="{Binding SelectedStaff}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Name}" />
+                            <TextBlock Text="{Binding Position}" />
+                            
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
         </Grid>
-    
-    
-    <Grid x:Name="detailGrid" Grid.Column="1" Margin="10">
+
+
+        <Grid Grid.Column="1" Margin="10">
             <StackPanel>
                 <TextBlock Text="Staff Detail" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
 
-                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                    <StackPanel>
-                        <TextBlock Text="Name:" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding SelectedStaff.Name}"/>
-                        <TextBlock Text="Department:" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding SelectedStaff.Department}"/>
-                        <TextBlock Text="Position:" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding SelectedStaff.Position}"/>
-                        <TextBlock Text="Age:" FontWeight="Bold"/>
-                        <TextBlock Text="{Binding SelectedStaff.Age}"/>
-                    </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="0,0,0,10">
+                    <TextBlock Text="Name:" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedStaff.Name}" />
+
+                    <TextBlock Text="Department:" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedStaff.Department}" />
+
+                    <TextBlock Text="Position:" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedStaff.Position}" />
+
+                    <TextBlock Text="Age:" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedStaff.Age}" />
                 </StackPanel>
 
                 <TextBlock Text="Email:" FontWeight="Bold"/>

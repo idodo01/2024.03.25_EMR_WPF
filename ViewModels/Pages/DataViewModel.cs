@@ -43,9 +43,9 @@ namespace EMR.ViewModels.Pages
         #region COMMANDS
 
         [RelayCommand]
-        private void OnSelectName()
+        private void OnSelectedName()
         {
-            var selectedData = this.selectedName;
+            var selectedData = this.SelectedName;
         }
 
         [RelayCommand]
@@ -102,12 +102,7 @@ namespace EMR.ViewModels.Pages
         public void OnNavigatedFrom() { }
 
 
-        [RelayCommand]
-        private void OnSelectedName()
-        {
-            var selectedData = this.SelectedName;
-        }
-
+        
 
         private async Task InitializeViewModelAsync()
         {
